@@ -61,7 +61,8 @@ public static void main(String[] args) throws MessagingException, GeneralSecurit
     mimeMessage.setSubject("Hello Mail");
 
     //邮件内容
-    String b = "haha";
+    BuildHtml buildHtml = new BuildHtml();
+    String htmlTable = buildHtml.buildHTML(ListMapTest.getListMap());
     int a = 12;
     String s = "今日待办共计" + a +"条";
     String html = "<!DOCTYPE html>\n" +
@@ -73,6 +74,7 @@ public static void main(String[] args) throws MessagingException, GeneralSecurit
             "\n" +
             "<body>\n" +
             "    <p>处理链接：<a href=\"http://www.baidu.com\">http://www.baidu.com</a></p>\n" +
+             htmlTable +
             "</body>\n" +
             "\n" +
             "</html>";
