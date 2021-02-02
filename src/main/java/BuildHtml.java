@@ -11,7 +11,7 @@ public class BuildHtml {
         String htmlTitle = "<caption>这里是标题</caption>";
         String htmlTr = "";
         for(Map<String, Object> mapInfo:stringMap){
-            String htmlTd = "<tr>" +
+            String htmlTd = "<tr style=\"background-color: navy;color: white;\">" +
                     "<td align=\"center\">" + mapInfo.get("name").toString() + "</td>" +
                     "<td align=\"center\">" + mapInfo.get("code").toString() + "</td>" +
                     "<td align=\"center\">" + mapInfo.get("time").toString() + "</td>" +

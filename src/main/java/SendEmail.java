@@ -71,7 +71,11 @@ public static void main(String[] args) throws MessagingException, GeneralSecurit
             "<head>\n" +
             "    <meta charset=\"UTF-8\">\n" +
             "</head>\n" +
-            "\n" +
+            "<style>\n" +
+            "    table {\n" +
+            "        border-collapse: collapse;\n" +
+            "    }\n" +
+            "</style>" +
             "<body>\n" +
             "    <p>处理链接：<a href=\"http://www.baidu.com\">http://www.baidu.com</a></p>\n" +
              htmlTable +
